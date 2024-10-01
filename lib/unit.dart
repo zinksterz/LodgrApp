@@ -1,24 +1,30 @@
+import 'dart:io';
+
+import 'maintenance_ticket.dart';
+
 class Unit{
-  String name;
   int id;
-  List<String> moveInPhotos;
-  List<String> moveOutPhotos;
-  //File PropertyAgreement;
-  //List<MaintenanceRequest> maintenanceRequests;
+  String name;
+  List<File>? moveInPhotos;
+  List<File>? moveOutPhotos;
+  File leaseAgreement;
+  List<MaintenanceTicket> maintenanceRequests;
   String renterName;
   String contactInformation;
-  //String renterPaymentHistory; red, yellow, green
+  int renterPaymentHistory; //red, yellow, green
   DateTime moveIn;
   DateTime moveOut;
 
   Unit({
-    required this.name,
     required this.id,
-    required this.moveInPhotos,
-    required this.moveOutPhotos,
-    //required this.maintenanceRequests,
+    required this.name,
+    this.moveInPhotos,
+    this.moveOutPhotos,
+    required this.leaseAgreement,
+    required this.maintenanceRequests,
     required this.renterName,
     required this.contactInformation,
+    required this.renterPaymentHistory,
     required this.moveIn,
     required this.moveOut,
 
