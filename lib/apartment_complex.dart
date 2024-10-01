@@ -18,6 +18,6 @@ class ApartmentComplex{
     required this.favorited,
     required this.units,
 });
-
+//Just verifying something obtuse
 }
 
