@@ -1,7 +1,7 @@
 import 'apartment_complex.dart';
 
 class PropertyManager{
-  int id;
+  String id;
   String name;
   String role;
   String phoneNumber;

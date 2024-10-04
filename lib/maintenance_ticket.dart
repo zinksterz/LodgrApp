@@ -1,11 +1,10 @@
-import 'package:lodgr_app/renter.dart';
 import 'package:lodgr_app/unit.dart';
 import 'dart:io';
 
 class MaintenanceTicket{
-  int id;
+  String id;
   Unit unit;
-  Renter renter;
+  String renterId;
   String description;
   DateTime requestSubmitted;
   bool completed;
@@ -17,7 +16,7 @@ class MaintenanceTicket{
   MaintenanceTicket({
    required this.id,
    required this.unit,
-   required this.renter,
+   required this.renterId,
    required this.description,
    required this.requestSubmitted,
    required this.completed,

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 class Renter{
-  int id;
+  String id;
   String name;
   String role;
   String phoneNumber;

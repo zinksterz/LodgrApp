@@ -1,5 +1,5 @@
 class MaintenanceTech{
-  int id;
+  String id;
   String name;
   String phoneNumber;
   String email;
