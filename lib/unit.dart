@@ -4,6 +4,9 @@ import 'maintenance_ticket.dart';
 
 class Unit{
   int id;
+  String complexId;
+  List<String> tenantIds;
+  String? leaseId;
   String name;
   List<File>? moveInPhotos;
   List<File>? moveOutPhotos;
@@ -17,6 +20,9 @@ class Unit{
 
   Unit({
     required this.id,
+    required this.complexId,
+    required this.tenantIds,
+    this.leaseId,
     required this.name,
     this.moveInPhotos,
     this.moveOutPhotos,
