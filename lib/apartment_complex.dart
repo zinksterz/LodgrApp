@@ -8,7 +8,8 @@ class ApartmentComplex{
   String phoneNumber;
   String email;
   bool favorited;
-  List<Unit> units;
+  List<Unit> unitIds;
+  String? managerId;
   File? profileImage;
 
   ApartmentComplex({
@@ -18,7 +19,8 @@ class ApartmentComplex{
     required this.phoneNumber,
     required this.email,
     required this.favorited,
-    required this.units,
+    required this.unitIds,
+    this.managerId,
     this.profileImage,
 });
 
