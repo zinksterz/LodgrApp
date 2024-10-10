@@ -6,10 +6,10 @@ class Renter{
   String role;
   String phoneNumber;
   String email;
-  DateTime moveIn;
+  DateTime? moveIn;
   DateTime? moveOut;
   File? profilePhoto;
-  File leaseAgreement;
+  File? leaseAgreement;
   int onTimePayments;
 
   Renter({
@@ -18,10 +18,10 @@ class Renter{
    required this.role,
    required this.phoneNumber,
    required this.email,
-   required this.moveIn,
+   this.moveIn,
    this.moveOut,
    this.profilePhoto,
-   required this.leaseAgreement,
+   this.leaseAgreement,
    required this.onTimePayments,
 });
 }
