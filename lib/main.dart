@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lodgr_app/screens/wrapper.dart';
+import 'package:lodgr_app/screens/home/renter_home.dart';
+import 'package:lodgr_app/screens/splash.dart';
 import 'package:lodgr_app/utils/constants.dart';
 import 'dart:ui';
 
@@ -12,7 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     return MaterialApp(
-    home: Wrapper(),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Splash(),
+        '/wrapper': (context) => Wrapper(),
+        '/renterHome': (context) => RenterHome(),
+      },
     );
   }
 }

@@ -12,7 +12,7 @@ class _SplashState extends State<Splash>{
   void initState() {
     super.initState();
 
-    Timer(Duration(seconds: 3), () {
+    Timer(Duration(seconds: 5), () {
       Navigator.pushReplacementNamed(context, '/wrapper');
     });
   }
@@ -32,7 +32,7 @@ class _SplashState extends State<Splash>{
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("Lodgr",
-              style: TextStyle(color: Colors.white, fontSize: 35),
+              style: TextStyle(color: Colors.white, fontSize: 50),
             )
           ],
       )
