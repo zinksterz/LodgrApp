@@ -10,7 +10,7 @@ class Renter{
   DateTime? moveOut;
   File? profilePhoto;
   File? leaseAgreement;
-  int onTimePayments;
+  int? onTimePayments;
 
   Renter({
    required this.id,
@@ -22,6 +22,6 @@ class Renter{
    this.moveOut,
    this.profilePhoto,
    this.leaseAgreement,
-   required this.onTimePayments,
+   this.onTimePayments = 0,
 });
 }
